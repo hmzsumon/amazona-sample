@@ -88,6 +88,14 @@ productRouter.get(
 	})
 );
 
+// productRouter.get(
+// 	'/seed',
+// 	expressAsyncHandler(async (req, res) => {
+// 		const createProducts = await Product.insertMany(data.products);
+// 		res.send({ createProducts });
+// 	})
+// );
+
 productRouter.get(
 	'/:id',
 	expressAsyncHandler(async (req, res) => {
